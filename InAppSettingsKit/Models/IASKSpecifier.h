@@ -29,9 +29,12 @@
 - (id)initWithSpecifier:(NSDictionary *)specifier
         radioGroupValue:(NSString *)radioGroupValue;
 
+- (void)sortIfNeeded;
+
 - (NSString*)localizedObjectForKey:(NSString*)key;
 - (NSString*)title;
 - (NSString*)subtitle;
+- (NSString*)placeholder;
 - (NSString*)key;
 - (NSString*)type;
 - (NSString*)titleForCurrentValue:(id)currentValue;
@@ -49,6 +52,7 @@
 - (NSString*)minimumValueImage;
 - (NSString*)maximumValueImage;
 - (BOOL)isSecure;
+- (BOOL)displaySortedByTitle;
 - (UIKeyboardType)keyboardType;
 - (UITextAutocapitalizationType)autocapitalizationType;
 - (UITextAutocorrectionType)autoCorrectionType;
