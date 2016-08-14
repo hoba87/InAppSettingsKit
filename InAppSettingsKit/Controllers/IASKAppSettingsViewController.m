@@ -67,6 +67,11 @@ CGRect IASKCGRectSwap(CGRect rect);
 @synthesize settingsStore = _settingsStore;
 @synthesize file = _file;
 
+- (void)settingsViewControllerDidEnd:(IASKAppSettingsViewController *)sender
+{
+    
+}
+
 #pragma mark accessors
 - (IASKSettingsReader*)settingsReader {
 	if (!_settingsReader) {
